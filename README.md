@@ -9,6 +9,10 @@ YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜
 ・API取得：Python
 ・DB：MySQL
 
+#Staff
+コーディング：ハリネズミの日記(https://twitter.com/hedgehog_nene)
+TOP画像：meri / めり(https://twitter.com/hmn_mrr)
+
 # テーブル設計
 
 ## archives テーブル
