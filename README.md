@@ -28,6 +28,7 @@ YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜
 | ------------------ | ------ | ----------- |
 | id                 | string | null: false |
 | title              | string | null: false |
+| songer             | string | null: false |
 | url                | string | null: false |
 | thumbnail          | string | null: false |
 
