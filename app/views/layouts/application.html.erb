@@ -43,7 +43,7 @@
 							<article id="news">
 								<h2 class="major">News</h2>
 								<h3>2021/6/12 ねねいろらいぶ開催決定!!</h3>
-								<img class="music_img" src="images/neneirolive.jpeg">
+								<%= img_tag "neneirolive.jpeg",class :"music_img">
 								<p>6/12に桃鈴ねねYouTubeチャンネルにて3Dライブの開催決定!!!</p>
 								<ul class="actions">
 									<li><a href="https://twitter.com/momosuzunene/status/1399323334144233476?s=20" class="button">詳しくはこちらから</a></li>
@@ -59,7 +59,9 @@
 						<!-- about-->
 							<article id="about">
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/header.png" alt="" /></span>
+								<span class="image main">
+                <%= img_tag "header.png" %>
+                </span>
 								<h3>公式紹介文</h3>
 								<blockquote>アイドルにあこがれて、異世界からやってきた女の子。<br>歌って踊ることとお絵描きが大好き。<br>たくさんの人に愛される存在になるべく、日々特訓中。</blockquote>
 								<p>ホロライブ5期生 オレンジ担当。性格、話し方ともに天真爛漫だが、頭は小学生男児で「う○ち」や「お○っこ」というワードに過剰に反応する傾向がある。ホロライブの他メンバーからは妹、末っ子のように可愛がられているが、「アイドルにあこがれて」という目標に向けて、1日6時間のダンスレッスンを連日こなすなど、歌やダンスに対する努力に対しては妥協なく取り組み、ホロライブトップクラスの水準の歌唱力とダンスパフォーマンス力を誇る。配信スタイルは昼間の配信は一緒にお昼を食べながら雑談したりと雑談スタイルが多い。夜はゲーム配信が多く、歌枠、雑談枠も不定期で行っている。スーパーチャットのお礼を特典会と称し、ほぼ全ての枠で行っているが、画面上がカオスになったり、即興のオリジナルソングが生まれることから、ファンからは「特典会が本編」と言われている。</p>
@@ -70,23 +72,23 @@
 								<h4>2020年</h4>
 								<ul>
 									<li>8/6 Twitter初投稿</li>
-									<li><span class="image main"><img src="images/20200813.jpeg" alt="" /></span><a href="#">8/13 配信初投稿</a></li>
-									<li><span class="image main"><img src="images/20200814.jpeg" alt="" /></span>8/14 YouTubeチャンネル登録者数10万人突破</li>
-									<li><a href="#"><span class="image main"><img src="images/20200911.png" alt="" /></span>9/11 メンバーシップ解禁</a></li>
+									<li><span class="image main"><%= img_tag "20200813.jpeg" %></span><a href="#">8/13 配信初投稿</a></li>
+									<li><span class="image main"><%= img_tag "20200814.jpeg" %></span>8/14 YouTubeチャンネル登録者数10万人突破</li>
+									<li><a href="#"><span class="image main">><%= img_tag "20200911.png" alt="" /></span>9/11 メンバーシップ解禁</a></li>
 									<li>9/11 YouTubeチャンネル登録者数20万人突破</li>
-									<li><span class="image main"><img src="images/20201031.png" alt="" /></span>10/31 どっきりラビリンス結成、「<a href="#">さぷらいずぱらだいす！</a>」投稿</li>
-									<li><span class="image main"><img src="images/20201115.jpeg" alt="" /></span>11/15 YouTubeチャンネル登録者数30万人突破</li>
-									<li><span class="image main"><img src="images/20201222.jpeg" alt="" /></span>12/22 hololive 2nd fes. Beyond the Stage Supported By Bushiroad STAGE2 影ナレ担当</li>
+									<li><span class="image main"><%= img_tag "20201031.png" %></span>10/31 どっきりラビリンス結成、「<a href="#">さぷらいずぱらだいす！</a>」投稿</li>
+									<li><span class="image main"><%= img_tag "20201115.jpeg" %></span>11/15 YouTubeチャンネル登録者数30万人突破</li>
+									<li><span class="image main"><%= img_tag "20201222.jpeg" %></span>12/22 hololive 2nd fes. Beyond the Stage Supported By Bushiroad STAGE2 影ナレ担当</li>
 								</ul>
 								<h4>2021年</h4>
 								<ul>
-									<li><span class="image main"><img src="images/20210118.png" alt="" /></span>1/18 YouTubeチャンネル登録者数40万人突破</li>
-									<li><span class="image main"><img src="images/20210131.jpeg" alt="" /></span>1/31 <a href="#">新ビジュアル発表会</a></li>
-									<li><span class="image main"><img src="images/20210302.jpeg" alt="" /></span>3/2 誕生日</li>
-									<li><span class="image main"><img src="images/20210303.jpeg" alt="" /></span>3/3 1stオリジナルソング <a href="#">「ねねねねねねねね！大爆走！」</a>リリース</li>
-									<li><span class="image main"><img src="images/20210418.jpeg" alt="" /></span>4/18 <a href="#">3Dモデルお披露目生放送</a></li>
-									<li><span class="image main"><img src="images/20210419.jpeg" alt="" /></span>4/19 2ndオリジナルソング <a href="#">「Lunch with me」</a>リリース</li>
-									<li><span class="image main"><img src="images/20210510.jpeg" alt="" /></span>5/10 YouTubeチャンネル登録者数60万人突破</li>
+									<li><span class="image main"><%= img_tag "20210118.png" %></span>1/18 YouTubeチャンネル登録者数40万人突破</li>
+									<li><span class="image main"><%= img_tag "20210131.jpeg" %></span>1/31 <a href="#">新ビジュアル発表会</a></li>
+									<li><span class="image main"><%= img_tag "20210302.jpeg" %></span>3/2 誕生日</li>
+									<li><span class="image main"><%= img_tag "20210303.jpeg" %></span>3/3 1stオリジナルソング <a href="#">「ねねねねねねねね！大爆走！」</a>リリース</li>
+									<li><span class="image main"><%= img_tag "20210418.jpeg" %></span>4/18 <a href="#">3Dモデルお披露目生放送</a></li>
+									<li><span class="image main"><%= img_tag "20210419.jpeg" %></span>4/19 2ndオリジナルソング <a href="#">「Lunch with me」</a>リリース</li>
+									<li><span class="image main"><%= img_tag "20210510.jpeg" %></span>5/10 YouTubeチャンネル登録者数60万人突破</li>
 								</ul>
 							</article>
 
@@ -144,17 +146,17 @@
 							<article id="musics">
 								<h2 class="major">MUSICS</h2>
 								<h3><span class="musictitle">2ndオリジナルソング</span><br>Lunch with me</h3>
-								<img class="music_img" src="images/lunchwithme.png" alt="Lunchwithme">
+								<%= img_tag "lunchwithme.png",class:"music_img" %>
 								<ul class="actions">
 									<li><a href="https://nene.streamlink.to/Lunchwithme" class="button">視聴はこちらから</a></li>
 								</ul>
 								<h3><span class="musictitle">1stオリジナルソング</span><br>Lunch with me</h3>
-								<img class="music_img" src="images/daibakusou.png" alt="ねねねねねねねねね！大爆走">
+								<%= img_tag "daibakusou.png",class:"music_img" %>
 								<ul class="actions">
 									<li><a href="https://nene.streamlink.to/DAIBAKUSOU" class="button">視聴はこちらから</a></li>
 								</ul>
 								<h3><span class="musictitle">5期生オリジナルソング</span><br>BLUE CLAPPER</h3>
-								<img class="music_img" src="images/blueclapper.png" alt="BLUE CLAPPER">
+								<%= img_tag "blueclapper.png" , class:"music_img" %>
 								<ul class="actions">
 									<li><a href="https://hip.fanlink.to/bc" class="button">視聴はこちらから</a></li>
 								</ul>
