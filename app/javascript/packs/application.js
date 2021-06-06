@@ -23,6 +23,8 @@ require("./browser.min")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+window.jQuery = window.$ = require("./jquery.min")
+
 (function($) {
 
 	var	$window = $(window),
