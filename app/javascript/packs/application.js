@@ -11,6 +11,9 @@ require('bootstrap/dist/js/bootstrap.min.js')
 require("./jquery.min")
 require("./breakpoints.min")
 require("./browser.min")
+// require("./main")
+// require("./util")
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -19,14 +22,6 @@ require("./browser.min")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-window.jQuery = window.$ = require("./jquery.min")
 
 (function($) {
 
