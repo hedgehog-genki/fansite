@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "csv"
+CSV.foreach("db/nenechannel_1.csv", headers: true) do |row|
+  Archive.create(
+    id: row["id"],
+    archivetitle: row["archivetitle"],
+    archiveid: row["archiveid"],
+    archiveviews: row["archiveviews"],
+    archivepostdate: row["archivepostdate"],
+    archiveurl: row["archiveurl"],
+    archiveimg: row["archiveimg"],
+    created_at: row["created_at"],
+    updated_at: row["upload_at"],
+  )
+end
