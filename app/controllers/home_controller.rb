@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
-  def def index
+  def def(index)
+    @archive = Archive.fin
   end
 end
