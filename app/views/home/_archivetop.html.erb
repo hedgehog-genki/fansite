@@ -1,0 +1,6 @@
+<div class = "archive_card">
+  <%= link_to "#{archivetop.archiveurl}",:onclick=>"window.open(this.href,'#{archivetop.archiveurl}', 'height=400, width=800');return false;" do %>
+    <%= image_tag (archivetop.archiveimg) , class: :music_img %>
+  <% end %>
+  <p><%= archivetop.archivetitle %></p>
+</div>

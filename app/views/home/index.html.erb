@@ -86,49 +86,11 @@
             <article id="archives">
               <h2 class="major">Archives</h2>
               <h3>オススメ動画</h3>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/YeUkeAq1Dqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【 #桃鈴ねね3D 】🍑桃鈴ねね3Dお披露目！🍑【ホロライブ/桃鈴ねね】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/VMLjEUYLSy0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【 #桃鈴ねね新ビジュアル】NEW SUPERNENECHI【桃鈴ねね/ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/fJ7ueGLuXk8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【初配信！】ホロライブ5期生、桃鈴ねねある🥟【#ほろふぁいぶ】</h4>
-              <h3>アーカイブ</h3>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/1MoE-wV1QFA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【親子コラボ】🍑なんでもアリの対談🍑【桃鈴ねね・西沢５ミリ/ ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/ziQJf-J65tg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【New ポケモンスナップ】🍑ねねのフェチ、全開🍑【桃鈴ねね/ ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/pbNIDT4AYuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【Duolingo】🍑STADYYYYYYYYYYYY!!!!!!!!!🍑【桃鈴ねね/ ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/_dlqG2xRxH8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【Minecraft】🍑悲しみのマイクラ配信🍑【桃鈴ねね/ ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/XmyHd8YFDkw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【昼雑】炭酸でお腹いっぱいにするタイプ【桃鈴ねね/ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/Nb7dpMwHLI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【みんなのリズム天国】磨くZE☆リズムッッ【桃鈴ねね/ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/XYIHq30RV-k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【リングフィットアドベンチャー】PERFECT NENECHI【ホロライブ/桃鈴ねね】</h4>
+              	<div class="archive">
+                  <%= render partial: "archivetop" , collection: @archivetop %>
+                </div>
               <ul class="actions">
-                <li><a href="#" class="button">その他のアーカイブはこちらから</a></li>
+                <li><%= link_to 'その他のアーカイブはこちらから' , archive_index_path , class: :button %></li>
               </ul>
             </article>
 
