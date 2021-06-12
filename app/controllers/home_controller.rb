@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  def def(index)
-    @archive = Archive.fin
+  def index
+    @archivetop = Archive.order(archiveviews: :desc).limit(14)
   end
 end

@@ -1,4 +1,6 @@
   <div class = "archive_card">
-    <%= image_tag (archive.archiveimg) , class: :music_img %>
+    <%= link_to "#{archive.archiveurl}",:onclick=>"window.open(this.href,'#{archive.archiveurl}', 'height=400, width=800');return false;" do %>
+      <%= image_tag (archive.archiveimg) , class: :music_img %>
+    <% end %>
     <p><%= archive.archivetitle %></p>
   </div>
