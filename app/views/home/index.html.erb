@@ -133,20 +133,11 @@
           <!-- clips -->
             <article id="clips">
               <h3>オススメ動画</h3>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/gXBcq17ZsGg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="archive">
+                  <%= render partial: "cliptop" , collection: @cliptop %>
               </div>
-              <h4>【切り抜き漫画】宇宙人狼でぺこらと団長の応酬に挟まれるねねち【兎田ぺこら/白銀ノエル/桃鈴ねね/ホロライブ】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/ptjq-udSvuU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【コラボ】ねねちに振り回されるホロライブえちち三銃士まとめ【宝鐘マリン/夏色まつり/アキローゼンタール/桃鈴ねね切り抜き】</h4>
-              <div class="iframe-wrapper">
-                <iframe src="https://www.youtube.com/embed/uQL9gpcd8AM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <h4>【桃鈴ねね】他人の金でガチャを引かされプレッシャーで壊れる新しいタイプのねね虐【ホロライブ】</h4>
               <ul class="actions">
-                <li><a href="#" class="button">その他の切り抜き動画はこちらから</a></li>
+                <li><%= link_to 'その他の切り抜き動画はこちらから' , clip_index_path , class: :button %></li>
               </ul>
             </article>
 
