@@ -1156,7 +1156,11 @@ input, select, textarea {
 			background-size: cover;
 			background-repeat: no-repeat;
 			z-index: 1;
+			animation: animationZoom1 45s ease-in-out forwards;
 		}
+		@keyframes animationZoom1 {
+      100% { transform:scale(2)} 
+    }
 
 		body.is-article-visible #bg:after {
 			-moz-transform: scale(1.0825);
