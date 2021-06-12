@@ -1,0 +1,6 @@
+<div class = "archive_card">
+  <%= link_to "#{cliptop.clipurl}",:onclick=>"window.open(this.href,'#{cliptop.clipurl}', 'height=400, width=800');return false;" do %>
+    <%= image_tag (cliptop.clipimg) , class: :music_img %>
+  <% end %>
+  <p><%= cliptop.cliptitle %></p>
+</div>
