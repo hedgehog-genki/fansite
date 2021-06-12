@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_052554) do
+ActiveRecord::Schema.define(version: 2021_06_12_064134) do
 
   create_table "archives", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.text "archiveid", null: false
@@ -30,6 +30,14 @@ ActiveRecord::Schema.define(version: 2021_06_12_052554) do
     t.integer "clipview", null: false
     t.text "clipimg", null: false
     t.datetime "clippostdate", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "fanarts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.string "fanartid", null: false
+    t.string "fanarturl", null: false
+    t.string "fanartuser", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
