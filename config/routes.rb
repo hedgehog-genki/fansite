@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :home
   resources :archive
   resources :clip
+  resources :fanart
 end
