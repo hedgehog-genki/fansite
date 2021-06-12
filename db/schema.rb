@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_08_090834) do
+ActiveRecord::Schema.define(version: 2021_06_12_052554) do
 
   create_table "archives", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.text "archiveid", null: false
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 2021_06_08_090834) do
     t.datetime "archivepostdate", null: false
     t.text "archiveurl", null: false
     t.text "archiveimg", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "clips", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.text "clipid", null: false
+    t.text "cliptitle", null: false
+    t.text "clipurl", null: false
+    t.integer "clipview", null: false
+    t.text "clipimg", null: false
+    t.datetime "clippostdate", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
