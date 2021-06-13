@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :archive
   resources :clip
   resources :fanart
+  resources :music
 end
