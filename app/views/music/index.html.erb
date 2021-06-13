@@ -9,12 +9,18 @@
 				<!-- about-->
 				<!-- archives -->
 					<article id="archives">
+          	<ul class="actions">
+            	<li><%= link_to 'HOME' , root_path , class: :button %></li>
+            </ul>
 						<h2 class="major">MUSICS</h2>
 						<h3>歌枠の動画をまとめてます</h3>
 						<div class="archive">
 							<%= render partial: "music" , collection: @music %>
 						</div>
 						<%= paginate @music %>
+            <ul class="actions">
+            	<li><%= link_to 'HOME' , root_path , class: :button %></li>
+            </ul>
 					</article>
 				<!-- fanarts -->
 			</div>

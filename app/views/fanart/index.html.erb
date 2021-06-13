@@ -9,9 +9,16 @@
 				<!-- about-->
 				<!-- archives -->
 					<article id="archives">
+						<ul class="actions">
+            	<li><%= link_to 'HOME' , root_path , class: :button %></li>
+            </ul>
+
 						<h2 class="major">fanart</h2>
 							<%= render partial: "fanart" , collection: @fanart %>
 						<%= paginate @fanart %>
+						<ul class="actions">
+            	<li><%= link_to 'HOME' , root_path , class: :button %></li>
+            </ul>
 					</article>
 				<!-- fanarts -->
 			</div>
