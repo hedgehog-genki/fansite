@@ -26,7 +26,7 @@ CSV.foreach("db/clip.csv",headers: true) do |row|
     clipid: row["clipid"],
     cliptitle: row["cliptitle"],
     clipurl: row["clipurl"],
-    clipviews: row["clipviews"],
+    clipview: row["clipview"],
     clipimg: row["clipimg"],
     clippostdate: row["clippostdate"],
     created_at: row["created_at"],
