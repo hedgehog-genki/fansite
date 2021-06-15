@@ -57,3 +57,5 @@ CSV.foreach("db/fanart.csv",headers: true) do |row|
     updated_at: row["updated_at"],
   )
 end
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
