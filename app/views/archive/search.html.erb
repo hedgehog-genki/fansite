@@ -16,22 +16,13 @@
   					<%= form.text_field :keyword, placeholder: "アーカイブを検索する" %>
   					<%= form.submit "検索" %>
 						<% end %>
-						<%= form_tag archive_index_path, method: :get, class: 'boards__searchForm' do %>
-    			  <%= select_tag :tag_id,
-                     options_from_collection_for_select(@tag, :id, :name, params[:tag_id]),
-                     {
-                       prompt: 'タグで絞り込み検索',
-                       onchange: 'submit(this.form);'
-                     }
-      			%>
-    				<% end %>
 						<h2 class="major">Archives</h2>
-						<h3>オススメ動画</h3>
+						<h3>検索結果</h3>
 						<div class="archive">
-							<%= render partial: "archive" , collection: @archive %>
+							<%= render partial: "result" , collection: @archives %>
 						</div>
 						<ul class="actions">
-						<%= paginate @archive %>
+						<%= paginate @archives %>
             	<li><%= link_to 'HOME' , root_path , class: :button %></li>
             </ul>
 					</article>
