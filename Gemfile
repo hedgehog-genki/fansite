@@ -60,3 +60,7 @@ gem "kaminari"
 gem "activeadmin", github: "gregbell/active_admin"
 gem "devise"
 gem "active_admin_importable"
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
