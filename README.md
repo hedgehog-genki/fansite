@@ -5,8 +5,6 @@
 YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜き動画、Twitterにアップされているファンアートを一覧にしています。<br>
 新しく桃鈴ねねさんのファンになった人に彼女の魅力がより多く伝わるように作成しました。<br>
 
-[![Image from Gyazo](https://i.gyazo.com/21db2c7595496081be5057a13d080f7f.gif)](https://gyazo.com/21db2c7595496081be5057a13d080f7f)
-
 ## URL
 http://fansite.konnene-matanene.com
 
