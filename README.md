@@ -5,6 +5,8 @@
 YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜き動画、Twitterにアップされているファンアートを一覧にしています。
 新しく桃鈴ねねさんのファンになった人に彼女の魅力がより多く伝わるように作成しました。
 
+[![Image from Gyazo](https://i.gyazo.com/21db2c7595496081be5057a13d080f7f.gif)](https://gyazo.com/21db2c7595496081be5057a13d080f7f)
+
 ## URL
 http://fansite.konnene-matanene.com
 
@@ -12,77 +14,76 @@ http://fansite.konnene-matanene.com
 上記URLにアクセスしていただくことで、ご利用いただけます。<br>
 各ページの紹介
 
-#使用技術
-・フロント：Ruby on rails
-・インフラ：AWS
-・API取得：Python
-・DB：MySQL
+- NEWS
+  - 桃鈴ねねさんのライブ情報や今後のライブ情報などを記載しています
+- ABOUT
+  - 桃鈴ねねさんの紹介ページになっています。モデラーなども確認することができます。
+-　ARCHIVES
+  - 桃鈴ねねさんのYouTubeチャンネル(https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA) にアップロードされている動画情報を見ることができます
+  - TOPページにて確認できる動画情報は再生数が多い動画です
+  - 「その他のアーカイブはこちら」から全ての動画情報を見ることができ、タグ検索、ワード検索をすることができます。
+- MUSICS
+  - これまで発表された桃鈴ねねさんのオリジナル曲や歌ってみた動画を確認することができます。
+  - 「その他の歌枠のまとめはこちら」から桃鈴ねねさんのYouTubeチャンネルにて、配信された「歌枠」から曲ごとの情報をまとめたページになります。
+- CLIPS
+  - 桃鈴ねねさんのYouTubeチャンネルにて配信された配信から一部分を切り取った動画、切り抜き動画の情報を掲載しています。
+  -  「その他の切り抜き動画はこちら」からClipsテーブルに登録されているデータ全てを確認することができます
+- LINKS
+  - 桃鈴ねねさんに関するリンクを確認することができます。
 
-#Staff
-コーディング：ハリネズミの日記(https://twitter.com/hedgehog_nene)
-TOP画像：meri / めり(https://twitter.com/hmn_mrr)
+## 使用技術
+- フロントエンド：HTML・CSS・Javascript
+- サーバーサイド：Ruby on rails
+- インフラ：AWS(インフラ構成図は後述)
+- API取得：Python
+- DB：MySQL
 
-# テーブル設計
+## インフラ構成図
 
-## archives テーブル
+[![Image from Gyazo](https://i.gyazo.com/1bfeab1210564231c484cc37e3c08f06.jpg)](https://gyazo.com/1bfeab1210564231c484cc37e3c08f06)
+
+## スタッフ
+- コーディング：ハリネズミの日記(https://twitter.com/hedgehog_nene)
+- イラスト制作：meri / めり(https://twitter.com/hmn_mrr)
+
+## テーブル設計
+
+### archives テーブル
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
-| id                 | string | null: false |
-| title              | string | null: false |
-| url                | string | null: false |
-| view               | string | null: false |
-| thumbnail          | string | null: false |
-| postdate           | string | null: false |
+| archiveid          | string | null: false |
+| archivetitle       | string | null: false |
+| ardhiveurl         | string | null: false |
+| archiveview        | string | null: false |
+| archiveimg.        | string | null: false |
+| archivepostdate    | string | null: false |
 
-## songs テーブル
+### musics テーブル
 
 | Column.            | Type   | Options     |
 | ------------------ | ------ | ----------- |
-| id                 | string | null: false |
-| title              | string | null: false |
-| songer             | string | null: false |
-| url                | string | null: false |
-| thumbnail          | string | null: false |
+| musicid            | string | null: false |
+| musictitle         | string | null: false |
+| musicauthor        | string | null: false |
+| musicurl           | string | null: false |
+| musicimg           | string | null: false |
 
-## clips テーブル
+### clips テーブル
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
-| id                 | string | null: false |
-| title              | string | null: false |
-| url                | string | null: false |
-| view               | string | null: false |
-| thumbnail          | string | null: false |
-| postdate           | string | null: false |
+| clipid             | string | null: false |
+| cliptitle          | string | null: false |
+| clipurl            | string | null: false |
+| clipview           | string | null: false |
+| clipimg.           | string | null: false |
+| clippostdate       | string | null: false |
 
-## arts テーブル
+### fanarts テーブル
 
-| Column  | Type   | Options     |
-| ------- | ------ | ----------- |
-| id      | string | null: false |
-| url     | string | null: false |
-| user    | string | null: false |
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| Column    | Type   | Options     |
+| -------   | ------ | ----------- |
+| fanartid  | string | null: false |
+| fanarturl | string | null: false |
+| fanartuser| string | null: false |
