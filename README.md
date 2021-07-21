@@ -35,6 +35,8 @@ http://fansite.konnene-matanene.com
 - サーバーサイド：Ruby on rails
 - インフラ：AWS(インフラ構成図は後述)
 - API取得：Python
+  - API取得用のスクリプトについては下記URL
+  - https://github.com/hedgehog-genki/apiget
 - DB：MySQL
 
 ## インフラ構成図
