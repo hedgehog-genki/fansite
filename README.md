@@ -6,6 +6,11 @@ YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜
 新しく桃鈴ねねさんのファンになった人に彼女の魅力がより多く伝わるように作成しました。<br>
 <img width="1440" alt="スクリーンショット 2021-07-06 18 36 41" src="https://user-images.githubusercontent.com/84561429/126415774-603b8b15-d89c-4b27-bcc4-4c2db537773d.png">
 
+
+## 紹介動画
+
+![fansite](https://user-images.githubusercontent.com/84561429/126730711-94301c13-8521-4399-b3c3-092d581ac15f.gif)
+
 ## URL
 http://fansite.konnene-matanene.com
 
@@ -43,9 +48,17 @@ http://fansite.konnene-matanene.com
 
 [![Image from Gyazo](https://i.gyazo.com/1bfeab1210564231c484cc37e3c08f06.jpg)](https://gyazo.com/1bfeab1210564231c484cc37e3c08f06)
 
+## 制作意図
+
+背景としては、自身がYouTubeやTwitterで桃鈴ねねさんの情報を見たいときに関連性のない情報があったり、どの動画を見るのがおすすめなのかということが<br>
+わかりにくかったこと、さらに桃鈴ねねさんのファンになったばかりの人により正確にわかりやすく桃鈴ねねさんの魅力を伝えたいと感じました。<br>
+最も制作した意図としては制作を通じて、桃鈴ねねさんを応援したいという思いから制作を行いました。
+
+## 
+
 ## スタッフ
-- コーディング：ハリネズミの日記(https://twitter.com/hedgehog_nene)
-- イラスト制作：meri / めり(https://twitter.com/hmn_mrr)
+- フロント・サーバーサイド・インフラ構築：ハリネズミの日記(https://twitter.com/hedgehog_nene)
+- トップページイラスト制作：meri / めり(https://twitter.com/hmn_mrr)
 
 ## テーブル設計
 
