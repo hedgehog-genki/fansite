@@ -2,10 +2,9 @@
 
 ## 概要
 このアプリはホロライブ所属の桃鈴ねねさんのファンサイト風アプリです。<br>
-YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜き動画、Twitterにアップされているファンアートを一覧にしています。<br>
+本アプリはイラストレーターのめりさんと私、宮内にて共同制作いたしました。<br>
+YouTube、TwitterのAPIを使用し、桃鈴ねねさんのチャンネルの動画情報や切り抜き動画、Twitterにアップされているファンアートを一覧にしています。<br>
 新しく桃鈴ねねさんのファンになった人に彼女の魅力がより多く伝わるように作成しました。<br>
-トップページのイラストはイラストレーターのmeri/めりさん(https://twitter.com/hmn_mrr)に依頼をしました。<br>
-その他、フロントエンド、サーバーサイドのコーディング、インフラ構築は私（HN：ハリネズミの日記 https://twitter.com/hedgehog_nene)にて制作いたしました。<br>
 <img width="1440" alt="スクリーンショット 2021-07-06 18 36 41" src="https://user-images.githubusercontent.com/84561429/126415774-603b8b15-d89c-4b27-bcc4-4c2db537773d.png">
 
 
@@ -71,7 +70,7 @@ http://fansite.konnene-matanene.com
 - Pythonで取得した情報をCSVでインポートするフローを採用しているが、インポートを定期実行する仕組み
 
 ## スタッフ
-- フロント・サーバーサイド・インフラ構築：ハリネズミの日記(https://twitter.com/hedgehog_nene)
+- フロント・サーバーサイド・インフラ構築：宮内(HN:ハリネズミの日記 https://twitter.com/hedgehog_nene)
 - トップページイラスト制作：meri / めり(https://twitter.com/hmn_mrr)
 
 ## テーブル設計
