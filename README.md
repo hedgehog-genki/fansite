@@ -4,6 +4,8 @@
 このアプリはホロライブ所属の桃鈴ねねさんのファンサイト風アプリです。<br>
 YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜き動画、Twitterにアップされているファンアートを一覧にしています。<br>
 新しく桃鈴ねねさんのファンになった人に彼女の魅力がより多く伝わるように作成しました。<br>
+トップページのイラストはイラストレーターのmeri/めりさん(https://twitter.com/hmn_mrr)に依頼をしました。<br>
+その他、フロントエンド、サーバーサイドのコーディング、インフラ構築は私（HN：ハリネズミの日記 https://twitter.com/hedgehog_nene)にて制作いたしました。<br>
 <img width="1440" alt="スクリーンショット 2021-07-06 18 36 41" src="https://user-images.githubusercontent.com/84561429/126415774-603b8b15-d89c-4b27-bcc4-4c2db537773d.png">
 
 
