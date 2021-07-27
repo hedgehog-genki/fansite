@@ -9,7 +9,10 @@ YouTube、TwitterのAPIを使用し、チャンネルの動画情報や切り抜
 
 ## 紹介動画
 
-![fansite](https://user-images.githubusercontent.com/84561429/126730711-94301c13-8521-4399-b3c3-092d581ac15f.gif)
+![fansitever1](https://user-images.githubusercontent.com/84561429/127089006-f0470aac-80d7-4f13-9462-f0b9da2a43c0.gif)
+![fansitevertrue2](https://user-images.githubusercontent.com/84561429/127089016-6ef2405f-ea2e-4442-bfee-e02c995f90a2.gif)
+![fansitever3](https://user-images.githubusercontent.com/84561429/127089041-5992c000-2863-4da8-9dd3-16431dcc72f3.gif)
+![fansitever4](https://user-images.githubusercontent.com/84561429/127089068-9fdde7c2-498e-41ca-b688-f28ff580eea3.gif)
 
 ## URL
 http://fansite.konnene-matanene.com
@@ -54,7 +57,16 @@ http://fansite.konnene-matanene.com
 わかりにくかったこと、さらに桃鈴ねねさんのファンになったばかりの人により正確にわかりやすく桃鈴ねねさんの魅力を伝えたいと感じました。<br>
 最も制作した意図としては制作を通じて、桃鈴ねねさんを応援したいという思いから制作を行いました。
 
-## 
+## 工夫したポイント
+
+- 「桃鈴ねね」さんの魅力を伝えるため、文字の情報を減らし、可能な限り画像やYouTubeのサムネイルなど、視覚情報を増やすようにした
+- アーカイブテーブルではタグ検索をできるようにして、ユーザーが欲しい動画情報を迅速に取得できるようにした
+- 本来であれば、Railsアプリ内にてYouTube、TwitterAPIを使用して、テーブルに情報を登録するという機能を実装したかったが、難しかったため、断念
+  - 代わりにPythonを使用して情報を取得して、テーブルに登録するというフローで代用
+
+## 今後実装したい機能
+
+- Pythonで取得した情報をCSVでインポートするフローを採用しているが、インポートを定期実行する仕組み
 
 ## スタッフ
 - フロント・サーバーサイド・インフラ構築：ハリネズミの日記(https://twitter.com/hedgehog_nene)
